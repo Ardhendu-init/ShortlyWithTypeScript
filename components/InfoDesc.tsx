@@ -39,8 +39,8 @@ const InfoDesc = () => {
           lineHeight={1.6}
           mr="40px"
         >
-          Boost your brand recognition with each click.Generic links don't mean
-          a thing . Branded links help instil confidence in your content.
+          Boost your brand recognition with each click.Generic links don&#39;t
+          mean a thing . Branded links help instil confidence in your content.
         </Heading>
       </Flex>
     </>

@@ -26,6 +26,7 @@ const Footer = () => {
             _hover={{
               bgColor: "#2acfcf",
             }}
+            cursor="pointer"
           >
             <Image alt="Facebook" src={fb} />
           </Box>
@@ -40,6 +41,7 @@ const Footer = () => {
             justifyContent="center"
             alignItems="center"
             mr={5}
+            cursor="pointer"
           >
             <Image alt="Twitter" src={twitter} />
           </Box>
@@ -54,6 +56,7 @@ const Footer = () => {
             justifyContent="center"
             alignItems="center"
             mr={5}
+            cursor="pointer"
           >
             <Image alt="Pinterest" src={pinterest} />
           </Box>
@@ -68,6 +71,7 @@ const Footer = () => {
             justifyContent="center"
             alignItems="center"
             mr={5}
+            cursor="pointer"
           >
             <Image alt="Instagram" src={insta} />
           </Box>

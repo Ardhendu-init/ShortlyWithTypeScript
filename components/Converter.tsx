@@ -10,6 +10,7 @@ const Converter = () => {
   const [info, setInfo] = useState<ApiRes[]>([]);
 
   const fetchLink = async () => {
+    setUrl("");
     try {
       const response = await axios.get(`${API_Base}shorten?url=${url}`);
 
@@ -26,7 +27,6 @@ const Converter = () => {
   };
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setUrl("");
 
     fetchLink();
   };
@@ -82,7 +82,7 @@ const Converter = () => {
           </FormControl>
         </form>
       </Flex>
-      <ShortContainer info={info} />
+      <ShortContainer info={info} setInfo={setInfo} />
     </Flex>
   );
 };

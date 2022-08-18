@@ -1,12 +1,27 @@
 import { Box, Flex, Button, Text } from "@chakra-ui/react";
+import { Dispatch, SetStateAction, useState, useEffect } from "react";
 import { ApiRes } from "../model";
 
 interface infoProps {
   info: ApiRes[];
+  setInfo: Dispatch<SetStateAction<ApiRes[]>>;
 }
-const ShortContainer = ({ info }: infoProps) => {
-  const handleClick = (id: string) => {};
-
+const ShortContainer = ({ info, setInfo }: infoProps) => {
+  const [copyText, setCopyText] = useState<string>("");
+  const handleClick = (id: string) => {
+    setCopyText("");
+    info.forEach((item) => {
+      if (item.id === id) {
+        item.status = true;
+        setInfo(info);
+        setCopyText(item.shortLink);
+      }
+    });
+  };
+  useEffect(() => {
+    navigator.clipboard.writeText(copyText);
+  }, [copyText]);
+  console.log(copyText);
   return (
     <>
       {info.map((item) => {
@@ -28,23 +43,41 @@ const ShortContainer = ({ info }: infoProps) => {
                 <Text m={5} color="#2acfcf">
                   {item.shortLink}
                 </Text>
-
-                <Button
-                  mr={5}
-                  py={5}
-                  px={8}
-                  bgColor="#2acfcf"
-                  _hover={{
-                    bgColor: "#9be3e2",
-                  }}
-                  color="white"
-                  type="submit"
-                  fontSize="md"
-                  fontWeight="semibold"
-                  onClick={() => handleClick(item.id)}
-                >
-                  Copy
-                </Button>
+                {item.status == true ? (
+                  <Button
+                    mr={5}
+                    py={5}
+                    px={8}
+                    bgColor="#3a3053"
+                    _hover={{
+                      bgColor: "#3a3053",
+                    }}
+                    color="white"
+                    type="submit"
+                    fontSize="md"
+                    fontWeight="semibold"
+                    onClick={() => handleClick(item.id)}
+                  >
+                    Copied !{" "}
+                  </Button>
+                ) : (
+                  <Button
+                    mr={5}
+                    py={5}
+                    px={8}
+                    bgColor="#2acfcf"
+                    _hover={{
+                      bgColor: "#9be3e2",
+                    }}
+                    color="white"
+                    type="submit"
+                    fontSize="md"
+                    fontWeight="semibold"
+                    onClick={() => handleClick(item.id)}
+                  >
+                    Copy
+                  </Button>
+                )}
               </Flex>
             </Flex>
           </Box>

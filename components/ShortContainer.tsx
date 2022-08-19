@@ -19,7 +19,15 @@ const ShortContainer = ({ info, setInfo }: infoProps) => {
     });
   };
   useEffect(() => {
-    navigator.clipboard.writeText(copyText);
+    async function copyPageUrl() {
+      try {
+        await navigator.clipboard.writeText(copyText);
+        console.log("Page URL copied to clipboard");
+      } catch (err) {
+        console.error("Failed to copy: ", err);
+      }
+    }
+    copyPageUrl();
   }, [copyText]);
   console.log(copyText);
   return (

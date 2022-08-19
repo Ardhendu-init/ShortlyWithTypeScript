@@ -4,7 +4,7 @@ import Slider from "../components/Slider";
 import Converter from "../components/Converter";
 import Info from "../components/Info";
 import NewsLetter from "../components/NewsLetter";
-import Footer from "../components/Footer";
+import Footer from "../components/footerComponents/Footer";
 const Home: NextPage = () => {
   return (
     <>

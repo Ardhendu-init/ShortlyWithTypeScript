@@ -5,7 +5,7 @@ const Info = () => {
   return (
     <Flex
       flexDir="column"
-      bgColor="#f0f1f6"
+      bgColor="brand.100"
       alignItems="center"
       pb="100px"
       pt="50px"
@@ -19,7 +19,7 @@ const Info = () => {
         fontSize="2xl"
         textAlign="center"
         lineHeight="1.8"
-        color="	#a3a3ad"
+        color="	brand.400"
       >
         Track how your links are performing across the web with our advanced
         statistics dashboard.
@@ -31,7 +31,7 @@ const Info = () => {
       </Flex>
       <Divider
         width="70%"
-        bgColor="#2acfcf"
+        bgColor="brand.200"
         height="12px"
         pos="relative"
         bottom="210"

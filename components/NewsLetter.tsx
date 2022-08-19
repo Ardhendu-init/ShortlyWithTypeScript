@@ -17,11 +17,11 @@ const NewsLetter = () => {
         borderRadius="30px"
         py={7}
         fontSize="larger"
-        bgColor="#2acfcf"
+        bgColor="brand.200"
         _hover={{
-          bgColor: "#9be3e2",
+          bgColor: "brand.300",
         }}
-        color="white"
+        color="brand.800"
       >
         Get Started
       </Button>

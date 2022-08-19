@@ -12,26 +12,26 @@ const Navbar = () => {
           size="18px"
           pr={5}
           ml={12}
-          color="	#bfbfbf"
+          color="brand.600"
           variant="unstyled"
-          _hover={{ color: "black" }}
+          _hover={{ color: "brand.700" }}
         >
           Features
         </Button>
         <Button
           size="18px"
-          color="	#bfbfbf"
+          color="brand.600"
           pr={5}
-          _hover={{ color: "black" }}
+          _hover={{ color: "brand.700" }}
           variant="unstyled"
         >
           Pricing
         </Button>
         <Button
           size="18px"
-          color="	#bfbfbf"
+          color="brand.600"
           variant="unstyled"
-          _hover={{ color: "black" }}
+          _hover={{ color: "brand.700" }}
         >
           Resources
         </Button>

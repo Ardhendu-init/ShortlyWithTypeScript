@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box, Divider } from "@chakra-ui/react";
+import { Flex, Heading, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import logo from "../public/icon-brand-recognition.svg";
 interface Title {
@@ -23,7 +23,7 @@ const InfoDesc = ({ mar }: Title) => {
           position="relative"
           bottom="42px"
           left="35px"
-          bgColor="#3a3053"
+          bgColor="brand.500"
         >
           <Box px="25px" py="20px">
             <Image alt="Logo" width={500} height={500} src={logo} />
@@ -36,7 +36,7 @@ const InfoDesc = ({ mar }: Title) => {
           ml={8}
           mt={5}
           fontSize="md"
-          color="#a3a3ad"
+          color="brand.400"
           fontWeight="medium"
           lineHeight={1.6}
           mr="40px"

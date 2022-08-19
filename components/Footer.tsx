@@ -24,7 +24,7 @@ const Footer = () => {
             alignItems="center"
             mr={5}
             _hover={{
-              bgColor: "#2acfcf",
+              bgColor: "brand.200",
             }}
             cursor="pointer"
           >
@@ -33,7 +33,7 @@ const Footer = () => {
           <Box
             borderRadius="50%"
             _hover={{
-              bgColor: "#2acfcf",
+              bgColor: "brand.200",
             }}
             display="flex"
             w="32px"
@@ -48,7 +48,7 @@ const Footer = () => {
           <Box
             borderRadius="50%"
             _hover={{
-              bgColor: "#2acfcf",
+              bgColor: "brand.200",
             }}
             display="flex"
             w="32px"
@@ -63,7 +63,7 @@ const Footer = () => {
           <Box
             borderRadius="50%"
             _hover={{
-              bgColor: "#2acfcf",
+              bgColor: "brand.200",
             }}
             display="flex"
             w="32px"
@@ -79,31 +79,31 @@ const Footer = () => {
       </Flex>
       <Flex mt="60px" ml="200px">
         <List spacing={2}>
-          <ListItem fontSize="md" fontWeight="bold" color="white" mb={5}>
+          <ListItem fontSize="md" fontWeight="bold" color="brand.800" mb={5}>
             Features
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             Link Shortening
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             Branded Links
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
@@ -111,31 +111,31 @@ const Footer = () => {
           </ListItem>
         </List>
         <List spacing={2} ml="80px">
-          <ListItem fontSize="md" fontWeight="bold" color="white" mb={5}>
+          <ListItem fontSize="md" fontWeight="bold" color="brand.800" mb={5}>
             Resources
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             Blog
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             Developers
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
@@ -143,40 +143,40 @@ const Footer = () => {
           </ListItem>
         </List>
         <List spacing={2} ml="100px">
-          <ListItem fontSize="md" fontWeight="bold" color="white" mb={5}>
+          <ListItem fontSize="md" fontWeight="bold" color="brand.800" mb={5}>
             Company
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             About
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             Our Team
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >
             Careers
           </ListItem>
           <ListItem
-            color="#a3a3ad"
+            color="brand.400"
             _hover={{
-              color: "#2acfcf",
+              color: "brand.200",
             }}
             cursor="pointer"
           >

@@ -39,7 +39,7 @@ const Converter = () => {
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
-      bgColor="#f0f1f6"
+      bgColor="brand.100"
     >
       <Flex
         bgImage="url('Meteor.png')"
@@ -75,11 +75,11 @@ const Converter = () => {
               ml={3}
               mr={6}
               fontSize="larger"
-              bgColor="#2acfcf"
+              bgColor="brand.200"
               _hover={{
-                bgColor: "#9be3e2",
+                bgColor: "brand.300",
               }}
-              color="white"
+              color="brand.800"
               type="submit"
             >
               Shorten it!

@@ -35,7 +35,7 @@ const ShortContainer = ({ info, setInfo }: infoProps) => {
       {info.map((item) => {
         return (
           <Box
-            bgColor="White"
+            bgColor="brand.800"
             width="78%"
             position="relative"
             bottom="40px"
@@ -48,7 +48,7 @@ const ShortContainer = ({ info, setInfo }: infoProps) => {
               </Text>
 
               <Flex alignItems="center" justifyContent="space-between">
-                <Text m={5} color="#2acfcf">
+                <Text m={5} color="brand.200">
                   {item.shortLink}
                 </Text>
                 {item.status == true ? (
@@ -56,9 +56,9 @@ const ShortContainer = ({ info, setInfo }: infoProps) => {
                     mr={5}
                     py={5}
                     px={8}
-                    bgColor="#3a3053"
+                    bgColor="brand.500"
                     _hover={{
-                      bgColor: "#3a3053",
+                      bgColor: "brand.500",
                     }}
                     color="white"
                     type="submit"
@@ -73,11 +73,11 @@ const ShortContainer = ({ info, setInfo }: infoProps) => {
                     mr={5}
                     py={5}
                     px={8}
-                    bgColor="#2acfcf"
+                    bgColor="brand.200"
                     _hover={{
-                      bgColor: "#9be3e2",
+                      bgColor: "brand.300",
                     }}
-                    color="white"
+                    color="brand.800"
                     type="submit"
                     fontSize="md"
                     fontWeight="semibold"

@@ -26,6 +26,7 @@ const Converter = () => {
       setInfo([...info, newData]);
     } catch (error) {
       alert("Invalid URL: " + url);
+      setLoading(false);
     }
   };
   const handleSubmit = (e: React.FormEvent) => {

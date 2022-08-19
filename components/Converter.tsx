@@ -1,4 +1,4 @@
-import { Box, Flex, FormControl, Input, Button, Text } from "@chakra-ui/react";
+import { Flex, FormControl, Input, Button, Text } from "@chakra-ui/react";
 import ShortContainer from "./ShortContainer";
 import { useState } from "react";
 import { ApiRes } from "../model";
@@ -8,10 +8,12 @@ const API_Base: string = "https://api.shrtco.de/v2/";
 const Converter = () => {
   const [url, setUrl] = useState<string>("");
   const [info, setInfo] = useState<ApiRes[]>([]);
+  const [loading, setLoading] = useState(false);
 
   const fetchLink = async () => {
     setUrl("");
     try {
+      setLoading(true);
       const response = await axios.get(`${API_Base}shorten?url=${url}`);
 
       const newData: ApiRes = await {
@@ -20,6 +22,7 @@ const Converter = () => {
         shortLink: response.data.result.full_short_link2,
         status: false,
       };
+      setLoading(false);
       setInfo([...info, newData]);
     } catch (error) {
       alert("Invalid URL: " + url);
@@ -65,6 +68,8 @@ const Converter = () => {
               onChange={(e) => setUrl(e.target.value)}
             />
             <Button
+              isLoading={loading}
+              loadingText="Loading"
               py={8}
               px={12}
               ml={3}

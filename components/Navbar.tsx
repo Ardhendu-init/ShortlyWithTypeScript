@@ -3,15 +3,7 @@ import logo from "../public/logo-top.svg";
 import NextImage from "next/image";
 const Navbar = () => {
   return (
-    <Box
-      w="100%"
-      p={4}
-      display="flex"
-      alignItems="center"
-      ml="90px"
-      mr={6}
-      mt={6}
-    >
+    <Box p={4} display="flex" alignItems="center" ml="90px" mr={6} mt={6}>
       <Box pl={20}>
         <NextImage src={logo} alt="logo" />
       </Box>

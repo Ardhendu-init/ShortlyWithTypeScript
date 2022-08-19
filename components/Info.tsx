@@ -24,10 +24,10 @@ const Info = () => {
         Track how your links are performing across the web with our advanced
         statistics dashboard.
       </Text>
-      <Flex mt="100px" ml="100px">
-        <InfoDesc />
-        <InfoDesc />
-        <InfoDesc />
+      <Flex mt="100px" justifyContent="space-between">
+        <InfoDesc mar="100px" />
+        <InfoDesc mar="100px" />
+        <InfoDesc mar="0px" />
       </Flex>
       <Divider
         width="70%"

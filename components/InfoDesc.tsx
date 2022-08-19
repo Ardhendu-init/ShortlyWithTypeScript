@@ -1,8 +1,10 @@
 import { Flex, Heading, Text, Box, Divider } from "@chakra-ui/react";
 import Image from "next/image";
 import logo from "../public/icon-brand-recognition.svg";
-
-const InfoDesc = () => {
+interface Title {
+  mar: string;
+}
+const InfoDesc = ({ mar }: Title) => {
   return (
     <>
       <Flex
@@ -10,8 +12,8 @@ const InfoDesc = () => {
         height="300px"
         width="380px"
         bgColor="white"
+        mr={mar}
         my={10}
-        mr="100px"
         zIndex="2"
       >
         <Box

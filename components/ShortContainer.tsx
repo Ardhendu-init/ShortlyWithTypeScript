@@ -8,12 +8,13 @@ interface infoProps {
 }
 const ShortContainer = ({ info, setInfo }: infoProps) => {
   const [copyText, setCopyText] = useState<string>("");
+  const shortItems = info;
   const handleClick = (id: string) => {
     setCopyText("");
-    info.forEach((item) => {
+    shortItems.forEach((item) => {
       if (item.id === id) {
         item.status = true;
-        setInfo(info);
+        setInfo([...shortItems]);
         setCopyText(item.shortLink);
       }
     });
